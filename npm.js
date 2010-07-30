@@ -47,6 +47,7 @@ var commandCache = {}
   , "ls"
   , "rm"
   , "owner"
+  , "grep"
   ].forEach(function (c) {
     Object.defineProperty(npm.commands, c, { get : function () {
       c = c === "list" ? "ls"
